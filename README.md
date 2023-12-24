@@ -70,7 +70,7 @@ we have placed the original dataset and Elasticsearch image on PKU disk. You can
 run the pre-process codes in it, and then use above data processing and analysis code in `spark` directory of this project for later steps.
 
 ### Steps
-1. Download data from ECA&D website. Unzip them, removing the not needed first 20 lines in each txt.
+1. Download data from ECA&D website. Unzip them, removing the not needed first 20 lines in each txt. (We've provided code to do this inside the RawData files in the outer links, but you can do it by yourself with a more convenient way.)
 2. Deploy the SeaweedFS and EXPOSE port 8888, save those text files into SeaweedFS.
 3. Deploy the Spark cluster.
 4. Deploy the ElasticSearch cluster and EXPOSE port 9200. (If you also deployed kibana, EXPOSE port 5601)
@@ -81,9 +81,9 @@ Note: The urls of Filesystem, ElasticSearch might vary depending on your machine
 
 
 ### Outer links
-RawData fils  https://disk.pku.edu.cn:443/link/880E890CCF0D51599FFD307D503D4493    Validation: 2024-02-29 23:59
+RawData files  https://disk.pku.edu.cn:443/link/880E890CCF0D51599FFD307D503D4493    Validation: 2024-02-29 23:59
 
-Next are a few tar files, which contain ready-to-use big data storage components. You only need to unzip it and run the binary in the `bin` directory to get the data we have already stored, ready to use.
+Next are a few zip files, which contain ready-to-use big-data storage components. You only need to unzip it and run the binary in the `bin` directory to get the data we have already processed and stored. They are ready to use!
 
 Those two can run in my computer with `Linux {username} 5.15.133.1-microsoft-standard-WSL2 #1 SMP Thu Oct 5 21:02:42 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux`
 
