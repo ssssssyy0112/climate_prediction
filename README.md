@@ -96,6 +96,8 @@ Then you can use `./elasticsearch-8.11.1/bin/elasticsearch` and `./kibana-8.11.1
 
 Our presentation pptx with personal information erased: https://disk.pku.edu.cn:443/link/BD67CA76FD40708F2F0432BF852487E3
 
+Docker Hub： https://hub.docker.com/repository/docker/ssssssyy189/climate_prediction/general    You can download images from this public hub which we used in this project.
+
 ## Deploy Code
 Below are some deploy code we used. You can copy it and run directly on your machine.
 
