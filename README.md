@@ -94,6 +94,8 @@ Kibana  https://disk.pku.edu.cn:443/link/2068BE598A9D627FFF295448200640BC     Va
 After downloading ES and Kibana, unzip them, you will have two folders: `elasticsearch-8.11.1` and `kibana-8.11.1`.
 Then you can use `./elasticsearch-8.11.1/bin/elasticsearch` and `./kibana-8.11.1` to run them, and jump to the Step 6 above to explore the data directly!
 
+Our presentation pptx with personal information erased: https://disk.pku.edu.cn:443/link/BD67CA76FD40708F2F0432BF852487E3
+
 ## Others
 Before trying to run our projects, you'll need to have a basic knowledge about how to run apps with `docker-compose`.
 
