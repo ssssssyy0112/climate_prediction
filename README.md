@@ -68,3 +68,34 @@ Those Python files are about data analysis and machine learning(prediction) usin
 Considering that our dataset is too large, the total size has exceeded the upper limit supported by Github GitLFS (1GB), 
 we have placed the original dataset and Elasticsearch image on PKU disk. You can directly download the data file zip package on the network disk, 
 run the pre-process codes in it, and then use above data processing and analysis code in `spark` directory of this project for later steps.
+
+### Steps
+1. Download data from ECA&D website. Unzip them, removing the not needed first 20 lines in each txt.
+2. Deploy the SeaweedFS and EXPOSE port 8888, save those text files into SeaweedFS.
+3. Deploy the Spark cluster.
+4. Deploy the ElasticSearch cluster and EXPOSE port 9200. (If you also deployed kibana, EXPOSE port 5601)
+5. Use code `spark/write_data.py` to fetch files from SeaweedFS, use spark to process them and write them into ElasticSearch.
+6. Use code `country.py` and `location.py` to add geo_point fileds into ElasticSearch. Use other Python files to do statistics, train and visualize data.
+
+Note: The urls of Filesystem, ElasticSearch might vary depending on your machine and settings. You need to modify them by yourself.
+
+
+### Outer links
+RawData fils  https://disk.pku.edu.cn:443/link/880E890CCF0D51599FFD307D503D4493    Validation: 2024-02-29 23:59
+
+Next are a few tar files, which contain ready-to-use big data storage components. You only need to unzip it and run the binary in the `bin` directory to get the data we have already stored, ready to use.
+
+Those two can run in my computer with `Linux {username} 5.15.133.1-microsoft-standard-WSL2 #1 SMP Thu Oct 5 21:02:42 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux`
+
+ElasticSearch  https://disk.pku.edu.cn:443/link/318E4F28C506B9B6992C364DBF013768    Validation：2024-02-29 23:59
+
+Kibana  https://disk.pku.edu.cn:443/link/2068BE598A9D627FFF295448200640BC     Validation：2024-02-29 23:59
+
+After downloading ES and Kibana, unzip them, you will have two folders: `elasticsearch-8.11.1` and `kibana-8.11.1`.
+Then you can use `./elasticsearch-8.11.1/bin/elasticsearch` and `./kibana-8.11.1` to run them, and jump to the Step 6 above to explore the data directly!
+
+## Others
+Before trying to run our projects, you'll need to have a basic knowledge about how to run apps with `docker-compose`.
+
+Also, `kibana` has many features, and you may need to search its website for more usages.
+
