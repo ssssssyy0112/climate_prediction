@@ -98,6 +98,13 @@ Our presentation pptx with personal information erased: https://disk.pku.edu.cn:
 
 Docker Hub： https://hub.docker.com/repository/docker/ssssssyy189/climate_prediction/general    You can download images from this public hub which we used in this project.
 
+```Shell
+docker pull ssssssyy189/climate_prediction:kibana
+docker pull ssssssyy189/climate_prediction:elasticsearch
+docker pull ssssssyy189/climate_prediction:seaweedfs
+docker pull ssssssyy189/climate_prediction:spark-spark-master
+```
+
 ## Deploy Code
 Below are some deploy code we used. You can copy it and run directly on your machine.
 
