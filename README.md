@@ -97,7 +97,7 @@ Then you can use `./elasticsearch-8.11.1/bin/elasticsearch` and `./kibana-8.11.1
 Our presentation pptx with personal information erased: https://disk.pku.edu.cn:443/link/BD67CA76FD40708F2F0432BF852487E3
 
 ## Deploy Code
-Below are some deploy code we used. You can copy it and run directly in your machine.
+Below are some deploy code we used. You can copy it and run directly on your machine.
 
 ### SeaweedFS
 ```Shell
@@ -333,7 +333,7 @@ docker exec -it spark-spark-master-1 /bin/bash -c "/opt/bitnami/spark/bin/spark-
 
 
 ### ElasticSearch
-If you only need a single-node es in your local, try to use the command below.
+If you only need a single-node elasticsearch locally, try to use the command below.
 ```Shell
 cd ~
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.11.1-linux-x86_64.tar.gz
@@ -341,7 +341,7 @@ tar -xvzf elasticsearch-8.11.1-linux-x86_64.tar.gz
 rm -rf elasticsearch-8.11.1-linux-x86_64.tar.gz
 ./elasticsearch-8.11.1/bin/elasticsearch
 ```
-The same for installing and running kibana, just replace elasticsearch with kibana.
+The same applies to kibana, just replace elasticsearch with kibana.
 
 
 
